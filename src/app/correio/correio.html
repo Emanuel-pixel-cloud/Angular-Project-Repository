@@ -1,0 +1,13 @@
+<h1> Consulta do Cep </h1>
+<p> Digite o cep desejado </p>
+<button (click)="buscarCEP()"> Buscar </button>
+
+<input [(ngModel)]="cep">
+
+<div *ngIf="dados">
+<p><strong> Localidade: </strong> {{dados.localidade}}</p>
+<p><strong> Estado: </strong> {{dados.estado}}</p>
+<p><strong> DDD: </strong> {{dados.ddd}}</p>
+<p><strong> CEP: </strong> {{dados.cep}}</p>
+<p><strong> IBGE: </strong> {{dados.ibge}}</p>
+</div>
